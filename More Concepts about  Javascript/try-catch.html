@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Error Handling</title>
+    <style>
+        h1,
+        p {
+            text-align: center;
+        }
+
+        .div-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .div-2 input {
+            width: 500px;
+            padding: 10px;
+        }
+
+        .div-2 button {
+            padding: 10px;
+            cursor: pointer;
+            background-color: greenyellow;
+        }
+
+        .error-msg {
+            color: white;
+            background-color: red;
+            width: 700px;
+            margin: auto;
+            margin-top: 30px;
+            padding: 13px 10px;
+        }
+
+        .success-msg {
+            color: white;
+            background-color: green;
+            width: 700px;
+            margin: auto;
+            margin-top: 30px;
+            padding: 33px 10px;
+            line-height: 43px;
+            font-size: 21px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <div>
+            <h1>Create custom error using Try and Catch</h1>
+            <div>
+                <div class="div-2">
+                    <input type="text" id="age-field" placeholder="Enter age between 18-30">
+                    <button onclick="checkAge()" type="submit">Submit</button>
+                </div>
+                <p id="error"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./try-catch.js"></script>
+</body>
+
+</html>
