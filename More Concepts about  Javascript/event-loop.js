@@ -36,3 +36,13 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
 
 a();
 m();
+
+console.log('aaa');
+console.log('bbb');
+
+setTimeout(() => {
+    console.log('ccc');
+}, 2000);
+
+console.log('ddd');
+console.log('eee');

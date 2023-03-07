@@ -16,25 +16,36 @@ function addItem() {
     const li = document.createElement("li");
     li.innerHTML = addInput.value;
     li.style.color = lastPickedColor;
-    colorChange();
-    itemList.appendChild("li");
+
+    // reference error-2
+    // colorChange();
+    changeColor();
+
+    // type error-1
+    // itemList.appendChild("li");
+    itemList.appendChild(li);
 
     addInput.value = "";
 }
 
 // remove item
 function removeItem() {
-    itemList.removeChild(li);
+    // reference error-4  : cannot access before initialization
+    // itemList.removeChild(li);
     let li = document.querySelector("li:last-child");
+    itemList.removeChild(li);
 }
 
 // change color
 function changeColor() {
     const List = document.querySelectorAll("li");
     const lastPickedColor = colorInput.value;
+    // console.log(List);
+
     // syntax error-2
+    // reference error-3  : length() is not a function
     // for (let i = 0; i < List.length() i++) {
-    for (let i = 0; i < List.length(); i++) {
+    for (let i = 0; i < List.length; i++) {
         List[i].style.color = lastPickedColor;
     }
 }
@@ -52,7 +63,7 @@ itemList.addEventListener("mouseout", (event) => {
         event.target.style.textTransform = "lowercase";
     }
     // syntax error-3
-// }));
+    // }));
 });
 
 // hide/show list
