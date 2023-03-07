@@ -48,3 +48,16 @@ let nums = [3, 4, 65, 5];
 
 if (nums.length > 5 && nums[0] === 5) {
 }
+
+let x = 5;
+// x = y + 2;
+// console.log(x);
+const obj = { name: 'John' };
+// Object.keys(obj).forEach(prop => console.log(prop));
+
+const name = 'John';
+name.toUpperCase = () => 'JOHN';
+// console.log(name.toUpperCase());
+
+const arr = [1, 2, 3];
+arr.slice(-2, 0);
