@@ -1,0 +1,41 @@
+Junior dev: 20% ------- code 
+            80% ------- struggle / debug error
+
+Senior dev: 60% / 80% ------- code 
+            40% / 20% ------- error / debug
+
+
+--- javascript has many common type errors ----
+    1. type error
+    2. reference error
+    3. syntax error 
+    4. Internal error
+    5. Range error
+
+Syntax error is triggered when you write code that is not syntactically correct.
+    •	Missing inverted commas
+    •	Missing closing parentheses
+    •	Improper alignment of curly braces or other characters.
+
+Type error is created when some doesn’t turn out to be of a particular expected type.
+    •	Calling objects that are not methods.
+    •	Attempting to access properties of null or undefined objects.
+    •	Treating a string as a number or vica versa.
+
+Reference error 
+
+Internal error occurs may when an excption occurs in the javascript runtime engine. It may or may not indicate an issue with your code.
+Range error thrown when a value is not in an allowed range.
+
+-----------------
+Some debugging techniques:
+    1. using console.log() method
+    2. setting the breakpoints
+    3. using the 'debugger' keyword
+    4. Backtracking 
+        • Backtracking uses different solutions unitl you find the right solution the error.
+        • it is effective for debugging.
+        • you apply possible solutions to solve the problem in the javascript program.
+        • if it doesn't work you retreat and select another move.
+        
+
