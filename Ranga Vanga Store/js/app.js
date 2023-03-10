@@ -13,7 +13,6 @@ loadProducts('https://fakestoreapi.com/products');
 
 // show all product in UI
 const showProducts = (products) => {
-
    setInnerText('total_products', products.length);
 
    document.getElementById("all-products").innerHTML = "";
@@ -23,7 +22,12 @@ const showProducts = (products) => {
       const image = product.image;
       // console.log(product.image);
       const div = document.createElement('div');
+
+      // 3 ways to add class by dynamically
       div.classList.add('product');
+      // div.className = "product-2";
+      // div.setAttribute('class', "product-2");
+
       div.innerHTML = `<div class="single-product">
          <div>
             <img class="product-image" src=${image}></img>
@@ -88,7 +92,7 @@ const setInnerText = (id, value) => {
 // update delivery charge and total Tax
 const updateTaxAndCharge = () => {
    const priceConverted = getInputValue('price');
-   
+
    if (priceConverted > 500) {
       setInnerText('delivery-charge', 60);
       setInnerText('total-tax', priceConverted * 0.4);
@@ -120,9 +124,9 @@ const updateTotal = () => {
 // search by category
 document.getElementById("search-btn").addEventListener("click", function () {
    const inputField = document.getElementById("input-value").value;
-   const searchedProduct = arr[0].filter((p) =>
-      p.title.includes(`${inputField}`)
-   );
+   const searchedProduct = arr[0].filter((p) => {
+      p.title.includes((`${inputField}`));
+   });
    showProducts(searchedProduct);
 });
 

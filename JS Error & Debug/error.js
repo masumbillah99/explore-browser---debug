@@ -16,3 +16,7 @@ function xyz() {
 for (let i = 0; i < 10; i++) {
     console.log(i);
 }
+
+const b = 6;
+b = 6;
+console.log(b);
