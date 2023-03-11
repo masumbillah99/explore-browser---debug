@@ -78,8 +78,8 @@ const createSlider = () => {
     src="${slide}"
     alt="">`;
         sliderContainer.appendChild(item)
-    })
-    changeSlide(0)
+    });
+    changeSlide(0);
     timer = setInterval(function () {
         slideIndex++;
         changeSlide(slideIndex);
