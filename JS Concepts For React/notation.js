@@ -29,7 +29,7 @@ const obj = {
 
 // object declaration shorthand
 const obj1 = { x, y };
-console.log(obj1);
+// console.log(obj1);
 
 const name = "solimullah";
 const area = "Dhaka";
@@ -39,4 +39,20 @@ const nobab = {
 }
 
 const nobab2 = { name, area };
-console.log(nobab2);
+// console.log(nobab2);
+
+if (!{}) {
+    console.log(false);;
+} else {
+    console.log(true);;
+}
+
+const adventurer = { name: 'Alice', cat: { name: 'Lucy' } };
+const ratName = adventurer?.rat?.name;
+console.log(ratName);
+
+const per = null;
+// console.log(per ? per : "person is null");
+
+const obj3 = { a: 1 };
+console.log(Object.keys(obj3).length === 0);
