@@ -6,11 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOM - LocalStorage</title>
+    <style>
+        input {
+            margin-right: 7px;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: tomato;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            padding: 8px 13px;
+            cursor: pointer;
+        }
+
+        ul {
+            font-size: 19px;
+        }
+    </style>
 </head>
 
 <body>
-    <button onclick="setName()">Set Name</button>
-    <button onclick="setAge()">Set Age</button>
+    <input type="text" id="name-field" placeholder="enter name">
+    <input type="number" id="age-field" placeholder="enter age">
+    <button onclick="addInfo()">Add Info LS</button>
+
     <ul id="item-container"></ul>
 
     <script src="./local-storage.js"></script>

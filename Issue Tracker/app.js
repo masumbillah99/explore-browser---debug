@@ -43,7 +43,7 @@ const fetchIssues = () => {
     const issuesList = document.getElementById('issuesList');
     issuesList.innerHTML = '';
 
-    for (var i = 0; i < issues.length; i++) {
+    for (var i = 0; i < issues; i++) {
         const { id, description, severity, assignedTo, status } = issues[i];
 
         issuesList.innerHTML += `

@@ -11,14 +11,14 @@
 
 <body>
     <header>
-        <h1>Welcome to my Phone Hunter!</h1>
+        <h1 class="text-center my-3">Welcome to my Phone Hunter!</h1>
     </header>
     <main class="container">
         <section>
-            <div class="mb-3 w-50">
-                <input id="search-field" type="email" class="form-control" id="exampleFormControlInput1"
+            <div class="mb-3 d-flex align-items-center justify-content-center">
+                <input id="search-field" type="email" class="form-control w-50 me-3" id="exampleFormControlInput1"
                     placeholder="search your phone" value="iphone">
-                <div id="btn-search" class="btn btn-primary">Search</div>
+                <button id="btn-search" class="btn btn-primary">Search</button>
             </div>
         </section>
         <!-- loader -->
@@ -46,8 +46,8 @@
         <section>
 
             <!-- Modal -->
-            <div class="modal fade" id="phoneDetailModal" tabindex="-1"
-                aria-labelledby="phoneDetailModalLabel" aria-hidden="true">
+            <div class="modal fade" id="phoneDetailModal" tabindex="-1" aria-labelledby="phoneDetailModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">

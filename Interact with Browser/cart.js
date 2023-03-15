@@ -44,4 +44,4 @@ const displayProductsFromLocalStorage = () => {
     }
 }
 
-displayProductsFromLocalStorage()
+displayProductsFromLocalStorage();
