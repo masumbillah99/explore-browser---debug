@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .div {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .div p {
+            background-color: darkgreen;
+            color: white;
+            padding: 11px 100px;
+            margin-left: 13px;
+            font-size: larger;
+        }
+
+        .div p span {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .div button {
+            padding: 9px 13px;
+            font-size: larger;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .div button:hover {
+            color: white;
+            background-color: tomato;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Practice task for Local Storage (level-2)</h2>
+    <div class="div">
+        <button onclick="increaseCount()" id="btn">Increase Count</button>
+        <p>the count: <span id="count-number">0</span></p>
+    </div>
+
+    <script>
+        let count = 1;
+        let countNumber = document.getElementById('count-number');
+        const increaseCount = () => {
+            countNumber.innerText = count++;
+            // console.log(countNumber);
+            return countNumber;
+        }
+
+        const setInLocalStorage = () => {
+            const number = increaseCount();
+            const numberString = JSON.stringify(number);
+            // localStorage.setItem('number', number);
+        }
+        setInLocalStorage();
+    </script>
+</body>
+
+</html>

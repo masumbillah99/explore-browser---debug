@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video in Webpage</title>
+    <style>
+        body {
+            background-color: gray;
+            color: white;
+            padding-left: 20px;
+        }
+
+        button {
+            padding: 11px 13px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        div {
+            display: none;
+        }
+
+        video {
+            width: 50%;
+            margin-top: 21px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Show video after click the link</h3>
+    <button id="video-btn">Video button</button>
+    <div id="container">
+        <video src="./images/video.mp4" controls></video>
+    </div>
+
+    <script>
+        const videoContainer = document.getElementById('container');
+        const videoBtn = document.getElementById('video-btn');
+        videoBtn.addEventListener('click', () => {
+            videoContainer.style.display = "block";
+        });
+    </script>
+</body>
+
+</html>
